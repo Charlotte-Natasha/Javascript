@@ -53,7 +53,7 @@ function playRound() {
         return `Tie`;
         }
     default:
-        alert("Unknown choice.");
+        console.log("Unknown choice.");
         return "Tie";
     }
 }
@@ -75,11 +75,11 @@ function game() {
     }
     }
     if (computerScore > playerScore) {
-        alert(`Computer won. Score is: ${computerScore} - ${playerScore}`);
+        console.log(`Computer won. Score is: ${computerScore} - ${playerScore}`);
     } else if (playerScore > computerScore) {
-        alert(`You won. Score is: ${playerScore} - ${computerScore}`);
+        console.log(`You won. Score is: ${playerScore} - ${computerScore}`);
     } else {
-        alert(`Tie. Score is: ${playerScore} - ${computerScore} `);
+        console.log(`Tie. Score is: ${playerScore} - ${computerScore} `);
     }
 }
 
